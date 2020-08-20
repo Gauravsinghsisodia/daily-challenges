@@ -2,7 +2,7 @@ a=[]
 b=[]
 c=[]
 for x in range(3):
-    print("Enter/Paste your prompt. Ctrl-D to save it.")
+    print("Enter/Paste your prompt. Ctrl-D to save it.If it is one line press enter and then press Ctrl+D.")
     contents = []
     while True:
         try:
@@ -11,8 +11,10 @@ for x in range(3):
             break
         contents.append(line)
     question1='\n'.join(contents)
-    name=input("Input function name")
+    print("\n")
+    name=input("Input function name:\n")
     n=int(input("Enter no. of test cases:\n"))
+    print("If inputs are strings put them in quotes")
     inp=[input("Enter inputs:\n") for _ in range(n)]
     out=[input("Enter outputs:\n") for _ in range(n)]
     notes=input("Enter Notes:\n")
@@ -50,7 +52,7 @@ for x in range(3):
         c.append("```\n\n")
         c.append("**Notes:**")
         c.append(var)
-print("@Coders")
+print("@Coder")
 print('------------------------------------------------')
 for x in a:
     print(x)
